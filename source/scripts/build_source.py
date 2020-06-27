@@ -4,10 +4,12 @@ import shutil
 
 
 # # # # #
-# Создание выходной директории.
+# Создание выходной директории и требуемых каталогов.
 # # # # #
 path_output_folder = "../../output"
 os.mkdir(path_output_folder)
+path_gamemode = path_output_folder + "/gamemode"
+os.mkdir(path_gamemode)
 
 
 
