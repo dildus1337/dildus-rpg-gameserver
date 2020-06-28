@@ -8,7 +8,7 @@ import shutil
 # # # # #
 path_output_folder = "../../output"
 os.mkdir(path_output_folder)
-path_gamemode = path_output_folder + "/gamemode"
+path_gamemode = path_output_folder + "/gamemodes"
 os.mkdir(path_gamemode)
 
 
@@ -29,6 +29,7 @@ while (i < len(data_server_cfg)):
         data_server_cfg[i] = "rcon_password (x1PLACE!HOLDER1x)" + '\n'
     i += 1
 
+# TODO: Минификация конфигурации.
 path_new_server_cfg = path_output_folder + "/server.cfg"
 file_new_server_cfg = open(path_new_server_cfg, "w")
 i = 0
